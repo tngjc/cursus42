@@ -28,6 +28,7 @@ size_t	ft_countwords(const char *s, char c)
 	return (words);
 }
 
+
 void	free_matrix(char **t)
 {
 	size_t	i;
