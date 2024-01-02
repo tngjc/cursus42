@@ -6,7 +6,7 @@
 /*   By: jtaing <jtaing@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/02 14:08:15 by jtaing            #+#    #+#             */
-/*   Updated: 2023/12/02 14:08:18 by jtaing           ###   ########.fr       */
+/*   Updated: 2023/12/22 18:08:27 by jtaing           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	int	len;
 
-	i = 0;
-	while (s[i])
-		i++;
-	while (i && s[i] != (char)c)
-		i--;
-	if (s[i] == (char)c)
-		return ((char *)s + i);
+	len = ft_strlen(s);
+	while (len)
+	{
+		if (s[len] == (char)c)
+			return ((char *)&s[len]);
+		len--;
+	}
+	if (s[len] == (char)c)
+		return ((char *)&s[len]);
 	return (NULL);
 }

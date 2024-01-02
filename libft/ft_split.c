@@ -6,7 +6,7 @@
 /*   By: jtaing <jtaing@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/02 14:06:19 by jtaing            #+#    #+#             */
-/*   Updated: 2023/12/02 14:13:38 by jtaing           ###   ########.fr       */
+/*   Updated: 2023/12/22 17:49:41 by jtaing           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ size_t	ft_countwords(const char *s, char c)
 	}
 	return (words);
 }
-
 
 void	free_matrix(char **t)
 {
